@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Patrick Barber</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Barber.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('#gallery a').click(function(){
+		var galleryHref = $(this).attr('href');
+		var galleryAlt = $(this).attr('title');
+		$('figure').css('display','none');
+		$('figure img').attr({ src: galleryHref, alt: galleryAlt });
+		$('figcaption').html(galleryAlt);
+		$('figure').fadeToggle(2000);
+		 return false;
+	});
+});
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+</head>
+<body>
+<div id="wrapper">
+<header>
+  <h1>Patrick Barber</h1>
+</header>
+<nav>
+<ul>
+  	<li><a href="Home.html">Home</a></li>
+    <li><a href="AboutMe.html">About Me</a></li>
+	<li><a href="Contact.html">Contact</a></li>
+
+</ul>
+</nav>
+<main>
+<h2>Welcome to Patrick Barber.com</h2>
+<p>Here you will find some info about me, my interests, and my hobbies. You will get to know me through text and pictures!<br>
+If you check the navigation links to your right you will find a page titled <b>"About Me"</b>. There you will learn more about my professional experience.<br>
+Feel free to contact me from the <b>"Contact"</b> page.<br>
+Thanks for stopping by!
+</p>
+
+<div class="fotorama" data-autoplay="true">
+  <img src="Jameson.jpg" data-caption="My dog Jameson." alt="My dog Jameson.">
+  <img src="JamesonDuke.jpg" data-caption="This is my dog Jameson and new puppy Charlie" alt="Jameson and Charlie">
+  <img src="JamesonDookie.jpg" data-caption="These two get along very well" alt="Jameson and Charlie">
+  <img src="SnowyDog.jpg" data-caption="I love dogs and love spending time with this guy" alt="Jameson in the snow">
+  <img src="Bike.jpg" data-caption="I also love riding my motorcycle" alt="My motorcycle">
+  <img src="KnicksGame1.jpg" data-caption="Basketball is my favorite sport. I love going to Knicks games." alt="Knicks game">
+  <img src="KnicksGame2.PNG" data-caption="This is the view from my second game." alt="Knicks game">
+  <img src="KnicksTunnel.PNG" data-caption="This is the view from my third game. I got to watch the players come out of the tunnel, it was great." alt="Knicks tunnel">
+</div>
+
+</main>
+<footer>
+  Copyright &copy; 2018 Patrick Barber<br>
+  E-mail: <a href="mailto:contact@PatrickBarber3002@gmail.com">PatrickBarber3002@gmail.com</a>
+</footer>
+</div>
+</body>
+</html>
